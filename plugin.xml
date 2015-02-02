@@ -28,6 +28,11 @@
         </config-file>
 
         <source-file src="src/android/SmsSender.java" target-dir="src/org/apache/cordova/smsSender" />
+	    <source-file src="src/android/PhoneInfo.java" target-dir="src/org/apache/cordova/smsSender" />
+        <source-file src="src/android/SmsListener.java" target-dir="src/org/apache/cordova/smsSender" />
+        <source-file src="src/android/SmsManager.java" target-dir="src/org/apache/cordova/smsSender" />
+        <source-file src="src/android/SmsUtils.java" target-dir="src/org/apache/cordova/smsSender" />
+
     </platform>
 
    
