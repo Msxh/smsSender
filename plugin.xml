@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="org.apache.cordova.smsSender"
+    version="0.0.1">
+    <name>SmsSender</name>
+    <description>Cordova SmsSender Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,smsSender</keywords>
+    <repo>https://github.com/Msxh/smsSender.git</repo>
+  <!--  <issue>https://issues.apache.org/jira/browse/CB/component/12320648</issue>
+-->
+    <js-module src="www/smsSender.js" name="smsSender">
+        <clobbers target="smsSender" />
+    </js-module>
+
+  
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SmsSender" >
+                <param name="android-package" value="org.apache.cordova.smsSender.SmsSender"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/SmsSender.java" target-dir="src/org/apache/cordova/smsSender" />
+    </platform>
+
+   
+   
+
+    
+</plugin>
